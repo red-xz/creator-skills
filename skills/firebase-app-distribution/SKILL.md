@@ -68,7 +68,7 @@ tester channel where every new build appears automatically.
 firebase appdistribution:distribute my-app-v7.apk \
   --app 1:PROJECT_NUMBER:android:APP_ID \
   --release-notes "v7: emergency request fixes" \
-  --testers "user@example.com,tester2@gmail.com"
+  --testers "user@example.com,tester2@example.com"
 # or a whole group, and/or a testers file (one email per line):
 firebase appdistribution:distribute app.apk --app <APP_ID> \
   --groups "beta-testers" --testers-file testers.txt
@@ -91,8 +91,8 @@ APK in → pick tester groups/individuals → add release notes →
 ## Manage testers
 
 ```bash
-firebase appdistribution:testers:add tester@gmail.com --project <PROJECT_ID>
-firebase appdistribution:testers:remove tester@gmail.com --project <PROJECT_ID>
+firebase appdistribution:testers:add tester@example.com --project <PROJECT_ID>
+firebase appdistribution:testers:remove tester@example.com --project <PROJECT_ID>
 ```
 
 Groups are managed in the console (App Distribution → Testers & Groups).
