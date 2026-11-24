@@ -1,0 +1,14 @@
+# editor + OS junk
+.DS_Store
+*.swp
+*.swo
+*~
+
+# never commit these even by accident
+*.key
+*.pem
+service-account*.json
+google-services.json
+testers.txt
+.env
+.env.*
